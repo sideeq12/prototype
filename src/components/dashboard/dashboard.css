@@ -1,0 +1,12 @@
+.dashboardWrap{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+} 
+
+@media (max-width : 800px) {
+    .dashboardWrap{
+        height: 100vh;
+    }
+}

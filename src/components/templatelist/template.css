@@ -1,0 +1,71 @@
+.dashboardWrap{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+} 
+.templist{
+    padding-top: 20px;
+    padding-left: 50px;
+    width: 75vw;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.templist h2{
+    margin-bottom: 50px;
+    margin-left: 250px;
+    font-size: 30px;
+}
+.mainList{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.templist .search{
+    margin-left: 100px;
+}
+.templist .search form input{
+    height: 20px;
+    width : 350px;
+    margin-right: 10px;
+    border-top : none;
+    border-left: none;
+    border-right: none;
+}
+.templist .search form select, .templist .search form button{
+    height: 30px;
+    width : 150px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.templist .search form button{
+    color: white;
+    background-color: #02083E;
+    border: none;
+}
+
+
+@media (max-width : 800px) {
+    .dashboardWrap{
+        height: 100vh;
+    }
+    .templist h2{
+        margin-left: 100px;
+    }
+    .templist{
+        width: 100vw;
+        padding-left: 5px;
+    }
+    .mainList{
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+    .templist .search form input{
+        width: 100px;
+    }
+    .templist .search form select, .templist .search form button{
+        height: 30px;
+        width : 100px;
+    }
+}
