@@ -29,7 +29,8 @@
     }
     .partners .partnerList{
         flex-direction: column-reverse;
-        height: 700px;
+        padding-top: 100px;
+        height: 400px;
         padding-bottom: 50px;
         gap : 6em;
     }
