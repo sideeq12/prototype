@@ -10,7 +10,7 @@ const TemplateList =()=>{
     return (
         <div className="dashboardWrap">
             <NavLinks /> 
-            <div className="templist">
+            {/* <div className="templist">
                 <h2>Template List</h2>
                 <div className="search">
                     <form>
@@ -27,7 +27,8 @@ const TemplateList =()=>{
                 <div className="mainList">
                     {SkillDB.map((data)=><Card image={data.image} key={data.id} text={data.Text} price={data.amount} />)}
                 </div>
-            </div>
+            </div> */}
+            <h3>Going on</h3>
             </div>
     )
 }
