@@ -39,6 +39,10 @@
     .menuBtn{
         display: block;
     }
+    .ourNav nav{
+       
+        left: 30px;
+    }
    
     .homeNav {
         height: 100vh;
