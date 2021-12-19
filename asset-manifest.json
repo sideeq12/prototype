@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/LearnersConnect/static/css/main.5280eacb.chunk.css",
+    "main.js": "/LearnersConnect/static/js/main.e7811494.chunk.js",
+    "main.js.map": "/LearnersConnect/static/js/main.e7811494.chunk.js.map",
+    "runtime-main.js": "/LearnersConnect/static/js/runtime-main.3bcba3f9.js",
+    "runtime-main.js.map": "/LearnersConnect/static/js/runtime-main.3bcba3f9.js.map",
+    "static/js/2.b9eda582.chunk.js": "/LearnersConnect/static/js/2.b9eda582.chunk.js",
+    "static/js/2.b9eda582.chunk.js.map": "/LearnersConnect/static/js/2.b9eda582.chunk.js.map",
+    "static/js/3.80ba38d4.chunk.js": "/LearnersConnect/static/js/3.80ba38d4.chunk.js",
+    "static/js/3.80ba38d4.chunk.js.map": "/LearnersConnect/static/js/3.80ba38d4.chunk.js.map",
+    "index.html": "/LearnersConnect/index.html",
+    "static/css/main.5280eacb.chunk.css.map": "/LearnersConnect/static/css/main.5280eacb.chunk.css.map",
+    "static/js/2.b9eda582.chunk.js.LICENSE.txt": "/LearnersConnect/static/js/2.b9eda582.chunk.js.LICENSE.txt",
+    "static/media/avatar.bedeb617.jpg": "/LearnersConnect/static/media/avatar.bedeb617.jpg",
+    "static/media/login.2e4c8043.svg": "/LearnersConnect/static/media/login.2e4c8043.svg",
+    "static/media/ordinary.62a75103.svg": "/LearnersConnect/static/media/ordinary.62a75103.svg",
+    "static/media/phone.71ae4809.svg": "/LearnersConnect/static/media/phone.71ae4809.svg",
+    "static/media/second.fec0b258.svg": "/LearnersConnect/static/media/second.fec0b258.svg",
+    "static/media/sign_up.0b955869.png": "/LearnersConnect/static/media/sign_up.0b955869.png",
+    "static/media/tutorial.f03cdf98.png": "/LearnersConnect/static/media/tutorial.f03cdf98.png",
+    "static/media/whiteclose.26e4fae9.svg": "/LearnersConnect/static/media/whiteclose.26e4fae9.svg",
+    "static/media/whitemenu.1ac76b23.svg": "/LearnersConnect/static/media/whitemenu.1ac76b23.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3bcba3f9.js",
+    "static/js/2.b9eda582.chunk.js",
+    "static/css/main.5280eacb.chunk.css",
+    "static/js/main.e7811494.chunk.js"
+  ]
+}
