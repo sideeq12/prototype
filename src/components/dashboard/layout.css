@@ -58,6 +58,7 @@
 
 @media (max-width : 800px) {
     .layout{
+        overflow-x: hidden;
         padding-top: 100px;
         width: 100vw;
         padding-left: 25px;

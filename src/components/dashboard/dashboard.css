@@ -8,5 +8,6 @@
 @media (max-width : 800px) {
     .dashboardWrap{
         height: 100vh;
+        overflow-x: hidden;
     }
 }
