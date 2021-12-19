@@ -2,7 +2,7 @@
     scroll-snap-align: start;
     height: 100vh;
     width: 100vw;
-    padding-top: 200px;
+    padding-top: 100px;
     text-align : center;
 }
 .guide .cardWrap{
@@ -42,7 +42,7 @@
 @media (max-width : 800px) {
     .guide{
         height: fit-content;
-        padding-top: 20px;
+        padding-top: 120px;
         padding-bottom: 20px;
     }
     .guide .cardWrap{

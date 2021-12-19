@@ -26,7 +26,7 @@
     .Review{
         height: fit-content;
         overflow: hidden;
-        padding-top: 70px;
+        padding-top: 120px;
     }
     .Review .ReviewList{
         gap: 2em;
