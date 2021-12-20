@@ -10,25 +10,21 @@ const TemplateList =()=>{
     return (
         <div className="dashboardWrap">
             <NavLinks /> 
-            {/* <div className="templist">
-                <h2>Template List</h2>
-                <div className="search">
-                    <form>
-                        <input type="text" required/>
-                        <select>
-                            <option>Category</option>
-                            <option>Academic</option>
-                            <option>Non Academics</option>
-                            <option>Random</option>
-                        </select>
-                        <button type="submit">Search</button>
-                    </form>
+          
+            <div className="skillWrap">
+                <div className="skill"> 
+                <h2>Latest skill template List</h2>
+                <div className="searchSection">
+                    <input type="text" placeholder="search for skill..." required /> <button>Search</button>
                 </div>
-                <div className="mainList">
-                    {SkillDB.map((data)=><Card image={data.image} key={data.id} text={data.Text} price={data.amount} />)}
+                <div className="latest">
+                <h3>skills offer list </h3>
+                <div className="cardList">
+                {SkillDB.map((data)=><Card image={data.image} key={data.id} text={data.Text} price={data.amount}/>)}
                 </div>
-            </div> */}
-            <h3>Going on</h3>
+            </div></div>
+            </div>
+            
             </div>
     )
 }

@@ -3,69 +3,90 @@
     height: 100vh;
     overflow: hidden;
     display: flex;
-} 
-.templist{
-    padding-top: 20px;
-    padding-left: 50px;
+}
+.dashboardWrap .skillWrap{
     width: 75vw;
+    border: 1px solid black;
     height: 100vh;
     overflow-y: scroll;
-}
-.templist h2{
-    margin-bottom: 50px;
-    margin-left: 250px;
-    font-size: 30px;
-}
-.mainList{
-    margin-top: 50px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.templist .search{
-    margin-left: 100px;
+.dashboardWrap .skillWrap .skill{
+    width: 72vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.templist .search form input{
-    height: 20px;
-    width : 350px;
-    margin-right: 10px;
-    border-top : none;
-    border-left: none;
-    border-right: none;
-}
-.templist .search form select, .templist .search form button{
-    height: 30px;
-    width : 150px;
-    margin-right: 5px;
-    border-radius: 5px;
-}
-.templist .search form button{
+.dashboardWrap .skillWrap .skill h2{
+    padding: 20px ;
     color: white;
     background-color: #02083E;
-    border: none;
+    width: 60%;
+    text-align: center;
 }
-
-
+.dashboardWrap .skillWrap .skill .searchSection{
+    margin: auto;
+    height: 35px;
+    width: 60%;;
+}
+.dashboardWrap .skillWrap .skill .searchSection input{
+    text-align: center;
+    height: 30px;
+    color: rgba(0, 0, 0, 0.548);
+    width: 60%;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+}
+.dashboardWrap .skillWrap .skill .searchSection button{
+    width: 100px;
+    border: none;
+    height: 35px;
+    background-color: #02083E;
+    color : white;
+}
+.dashboardWrap .skillWrap .skill .searchSection button:hover{
+    background-color: green;
+    cursor: pointer;
+}
+.dashboardWrap .skillWrap .skill .latest{
+    width: 90%;
+    text-align: center;
+}
+.dashboardWrap .skillWrap .skill .latest .cardList{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+}
 @media (max-width : 800px) {
     .dashboardWrap{
-        height: 100vh;
+        height: fit-content;
     }
-    .templist h2{
-        margin-left: 100px;
-    }
-    .templist{
+    .dashboardWrap .skillWrap{
+        padding-top: 100px;
+        height: fit-content;
         width: 100vw;
-        padding-left: 5px;
+        height: fit-content;
     }
-    .mainList{
-        align-items: center;
-        justify-content: center;
-        width: 100vw;
+    .dashboardWrap .skillWrap .skill{
+        width: 90vw;
     }
-    .templist .search form input{
-        width: 100px;
+    .dashboardWrap .skillWrap .skill h2,.dashboardWrap .skillWrap .skill .latest{
+        width: 90%;
     }
-    .templist .search form select, .templist .search form button{
+    .dashboardWrap .skillWrap .skill .searchSection{
+        width: 90%;
+    }
+    .dashboardWrap .skillWrap .skill .searchSection input{
+        height: 25px;
+    }
+    .dashboardWrap .skillWrap .skill .searchSection button{
         height: 30px;
-        width : 100px;
+    }
+    .dashboardWrap .skillWrap .skill .latest .cardList{
+        width: 100vw;
+        margin-left: -20px;
     }
 }
