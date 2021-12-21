@@ -1,8 +1,9 @@
 import React,{useState, useEffect} from "react";
-import { Link } from "react-router-dom";
+import { Link , useNavigate} from "react-router-dom";
 
 
 const SignUp = ()=>{
+    let navigate = useNavigate()
     
     const [fullname, setFullname] = useState("")
     const [email, setEmail]= useState("")
@@ -40,6 +41,8 @@ const SignUp = ()=>{
                     }
                     setUser(Details)
                     console.log(User)
+                    navigate("/verification")
+
             }else{
                 setErrorMessage("Password not Match!")
             }

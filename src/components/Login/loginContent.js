@@ -1,11 +1,17 @@
 import React, {useState, useEffect} from "react";
-import { Link } from "react-router-dom";
+import { Link , useNavigate} from "react-router-dom";
 
 const LoginDetails = ()=>{
+    let navigate = useNavigate();
+    let direction = "login"
+
+    // declaring the hooks
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [ErrorMessage, setErrorMessage] = useState("")
     const [User, setUser] = useState({})
+
+    // fuction being used to update datas
     const checkEmail = (e)=>{
         setEmail(e.target.value)
         console.log(email)
@@ -19,10 +25,13 @@ const LoginDetails = ()=>{
             if(password === "" ){
                 setErrorMessage("Incorrect password")
             }else{
+                direction = "dashboard"
+                navigate("/dashboard")
                 console.log("approved")
             }
         }else{
             setErrorMessage("Kindly provide valid OAU student's mail")
+            navigate("/login")
         }
     }
 
