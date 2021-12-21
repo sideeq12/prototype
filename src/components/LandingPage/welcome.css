@@ -19,26 +19,11 @@
     justify-content: center;
     align-items: center;
     object-fit: fill;
-    /* animation : imagesection;
-    animation-duration: 2s;
-    animation-fill-mode: forwards; */
 }
 .welcome .imageSection img{
     width: 100%;
 }
-@keyframes imagesection {
-    0%{
-        margin-left: 1
-        50px;
-    }
-    50%{
-margin-left: -250px;
-    }
-    90%{
-        margin-left: -150px;
-    }
 
-}
 .welcome .textSection p{
     color: rgba(255, 255, 255, 0.664);
     font-weight: bold;
@@ -46,7 +31,7 @@ margin-left: -250px;
 .welcome .textSection h1{
     font-size : 40px;
 }
-.welcome .textSection .get{
+.welcome .textSection a{
     margin-top: 20px;
     padding: 15px 0px;
     width: 150px;

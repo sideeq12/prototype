@@ -34,6 +34,10 @@
     padding-left: 50px;
     padding-top: 100px;
 }
+.login .error {
+    color: red;
+    width: 300px;
+}
 .first_nav{
     position: fixed;
     top : 20px;
@@ -134,5 +138,8 @@ color: white;
     .login{
         padding-top: 30px;
         padding-bottom: 20px;
+    }
+    .login .error{
+        font-size: small;
     }
 }

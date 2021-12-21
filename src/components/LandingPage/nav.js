@@ -15,10 +15,10 @@ useEffect(()=>{
     const changeWidth = ( )=>{
         setScreenWidth(screenWidth);
     } 
-    if(ToggleMenu == true){
+    if(ToggleMenu === true){
         setMyImage(close)
     }
-    if(ToggleMenu == false){
+    if(ToggleMenu === false){
         setMyImage(menu)
     }
     window.addEventListener("resize", changeWidth)

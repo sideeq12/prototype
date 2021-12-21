@@ -6,12 +6,12 @@
 }
 .dashboardWrap .skillWrap{
     width: 75vw;
-    border: 1px solid black;
     height: 100vh;
+    padding-top: 300px;
     overflow-y: scroll;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
+     align-items: center;
 }
 .dashboardWrap .skillWrap .skill{
     width: 72vw;

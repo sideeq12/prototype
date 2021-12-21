@@ -1,5 +1,4 @@
 import React from "react";
-import { Link, Routes, Route } from "react-router-dom";
 import NavLinks from "../NavLink/navLink";
 import "./template.css"
 import SkillDB from "../dashboard/skillDB";
