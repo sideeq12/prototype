@@ -1,30 +1,73 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "./layout.css"
-import Avatar from "./avatar.jpg"
-import DB from "./skillDB"
 import Card from "./card";
+import axios from "axios"
+
 
 const DashboardLayout = ()=>{
-    let image = "https://avatarfiles.alphacoders.com/210/thumb-1920-210881.jpg"
+    const url = "https://learnersconnect.herokuapp.com/api/dashboard"
+    const url2 = "https://learnersconnect.herokuapp.com/api/cardList"
+
+        const [count, setCount] = useState(true)
+        const [cardList, setCardList] = useState([])
+    const [userDetails, setUserDetails] = useState({
+        image : "",
+        full_name :"",
+        Faculty : "",
+        description : "",
+        email : "",
+        Gender : "",
+        tags : "",
+    })
+    const email = JSON.parse(localStorage.getItem("userInfo")).email
+    const User = {
+        email : email
+    }
+    const Headers = {
+        Headers : {
+            'Content-Type': 'Application/json'
+        }
+    }
+
+    if(count === true){
+        function userData(){
+            axios.post(url, User, Headers).then(response=>{
+                 if(response.data.message === "success"){
+                     setUserDetails(response.data.data)
+                 }
+             }   )  
+              axios.post(url2, User, Headers).then(response =>{
+                    if(response.data.message === "success"){
+                        const List = response.data.data
+                            setCardList(List)
+                    }
+             })  
+             
+         }
+         userData()
+             setCount(false)
+    }
+    
+
+  
+    let skills = userDetails.tags.split(",")
+
     return (
         <div className="layout">
             <div className="userDetails">
-                <img src={image} alt="user avatar" />
+                <img src={userDetails.image} alt="user avatar" />
                 <p>
-                    <b>Hammie Bada</b>
-                    <quote>Conputer Science</quote>
-                    <em>Unique Pen</em>
+                    <b>{userDetails.full_name}</b>
+                    <em>{userDetails.email}</em>
+                    <quote>{userDetails.Faculty}</quote>
                 </p>
             </div>
             <div className="tagsection">
                 <div className="tagList">
                     <h2>Skills and Tags</h2>
                     <p>
-                    <em>Catering services</em>
-                    <em>Catering services</em>
-                    <em>Catering services</em>
-                    <em>Catering services</em>
-                    <em>Catering services</em>
+                    {skills.map(skill => <em>{skill}</em>)}
+                    
                     </p>
                 </div>
                 <div className="aboutTag">
@@ -38,7 +81,7 @@ const DashboardLayout = ()=>{
                 </div>
             </div>
             <div className="skillList">
-                {DB.map((data)=><Card image={data.image} key={data.id} text={data.Text} price={data.amount} />)}
+                {cardList.map((data)=><Card image={data.image} key={data._id} text={data.description} price={data.price} link={data.social_link} />)}
             </div>
         </div>
     )
