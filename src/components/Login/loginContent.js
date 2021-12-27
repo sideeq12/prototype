@@ -4,7 +4,7 @@ import axios from "axios"
 
 const LoginDetails = ()=>{
     let navigate = useNavigate();
-    let url = "http://localhost:8080/api/user"
+    let url = "https://learnersconnect.herokuapp.com/api/user"
 
     // declaring the hooks
     const [email, setEmail] = useState("")

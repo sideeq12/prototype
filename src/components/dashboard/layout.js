@@ -59,7 +59,7 @@ const DashboardLayout = ()=>{
                 <p>
                     <b>{userDetails.full_name}</b>
                     <em>{userDetails.email}</em>
-                    <quote>{userDetails.Faculty}</quote>
+                    <quote>{userDetails.faculty}</quote>
                 </p>
             </div>
             <div className="tagsection">

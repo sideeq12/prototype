@@ -10,9 +10,9 @@ import Footer from "./footer";
 
 
 const LandingPage = ()=>{
-    // useEffect(()=>{
-    //     localStorage.removeItem("userInfo")
-    // })
+    useEffect(()=>{
+        localStorage.removeItem("userInfo")
+    })
     return (
         <div className="squeeze">
             <NavStyle />
