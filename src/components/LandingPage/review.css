@@ -6,6 +6,8 @@
     color: white;
     padding-top: 200px;
     text-align: center;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
 }
 .Review .ReviewList{
     display: flex;

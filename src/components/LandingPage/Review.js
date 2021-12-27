@@ -14,12 +14,12 @@ const Review = ()=>{
                     <p>“to get vocational skill easily without stress, this is the best platform”</p>
                 </div>
                 <div className="rev rev1">
-                    <img src={image2} alt="review LearnersConnect" />
+                    <img src={image3} alt="review LearnersConnect" />
                     <h4>Adebowale Praise</h4>
                     <p>“How i wish i diecovered student’s connect early ..”</p>
                 </div>
                 <div className="rev rev2">
-                    <img src={image3} alt="review LearnersConnect" />
+                    <img src={image2} alt="review LearnersConnect" />
                     <h4>Adedoyin Muinat</h4>
                     <p>“I really find this platform helpful through out my part one studies..”</p>
                 </div>

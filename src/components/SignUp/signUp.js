@@ -14,14 +14,16 @@ const SignUp = ()=>{
     const [Spassword, setSpassword] = useState("")
     const [ErrorMessage, setErrorMessage]= useState("")
     const [image, setImage] = useState("empty")
+    const [tags, setTags] = useState("empyt")
     const [User, setUser] = useState({ full_name: "", 
     email : "", Faculty : "", password : "", image : "", isVerified : false, gender : "not specified", tags : ""})
 
     
     async function handleform(e){
         const form = e.currentTarget;
-        const fileInput = Array.from(form.elements).find(({name})=> name == "file")
+        const fileInput = Array.from(form.elements).find(({name})=> name === "file")
         if(fileInput.files.length ===1){
+            setImage("valid")
             const formData = new FormData();
             for(const file of fileInput.files){
                 formData.append("file", file)
@@ -63,6 +65,7 @@ const SignUp = ()=>{
     const changeTags = (e)=>{
         let data = e.target.value;
         User.tags = data;
+        setTags("valid")
     }
     
     const Test = (e)=>{
@@ -71,32 +74,40 @@ const SignUp = ()=>{
             setErrorMessage("Kindly input your full name")
         }else if(email.includes("oauife.edu.ng")){
             if(password !== "" && password.length > 8){
-                if(password === Spassword){
-                    setErrorMessage("")
-                    User.password = password
-                    const Headers = {
-                        headers : {
-                            'Content-Type' : 'application/json'
+               if(image !== "empty"){
+                if(tags !== "empty"){
+                    if(password === Spassword){
+                        setErrorMessage("")
+                        User.password = password
+                        const Headers = {
+                            headers : {
+                                'Content-Type' : 'application/json'
+                            }
                         }
-                    }
-                    axios.post(url, User, Headers)
-                    .then((res)=>{
-                        if(res.data.result == "used"){
-                                setErrorMessage("Email already been used")
-                        }else{
-                            const store = res.data.userData
-                            console.log(store)
-                            localStorage.setItem("userInfo",JSON.stringify(store))
-                            navigate("/dashboard")
-                        }
-                        
-                        })
-                    .catch((err)=>{ console.log("Error response : ", err)})
-                    console.log("the user is ", User)
-
-            }else{
-                setErrorMessage("Password not Match!")
-            }
+                        axios.post(url, User, Headers)
+                        .then((res)=>{
+                            if(res.data.result === "used"){
+                                    setErrorMessage("Email already been used")
+                            }else{
+                                const store = res.data.userData
+                                console.log(store)
+                                localStorage.setItem("userInfo",JSON.stringify(store))
+                                navigate("/dashboard")
+                            }
+                            
+                            })
+                        .catch((err)=>{ console.log("Error response : ", err)})
+                        console.log("the user is ", User)
+    
+                }else{
+                    setErrorMessage("Password not Match!")
+                }
+                }else{
+                    setErrorMessage("minimum of three tags required")
+                }
+               }else{
+                   setErrorMessage("profile pic required")
+               }
             }else{
                 setErrorMessage("Password must exceed 8 characters")
             }

@@ -2,11 +2,14 @@ import React, {useEffect, useState} from "react";
 import "./layout.css"
 import Card from "./card";
 import axios from "axios"
+import { useNavigate } from "react-router-dom";
 
 
 const DashboardLayout = ()=>{
     const url = "https://learnersconnect.herokuapp.com/api/dashboard"
     const url2 = "https://learnersconnect.herokuapp.com/api/cardList"
+    const navigate = useNavigate()
+
 
         const [count, setCount] = useState(true)
         const [cardList, setCardList] = useState([])
@@ -19,34 +22,39 @@ const DashboardLayout = ()=>{
         Gender : "",
         tags : "",
     })
-    const email = JSON.parse(localStorage.getItem("userInfo")).email
-    const User = {
-        email : email
-    }
-    const Headers = {
-        Headers : {
-            'Content-Type': 'Application/json'
+    if(localStorage.getItem("userInfo") !== null){
+        const email = JSON.parse(localStorage.getItem("userInfo")).email
+        const User = {
+            email : email
         }
+        const Headers = {
+            Headers : {
+                'Content-Type': 'Application/json'
+            }
+        }
+    
+        if(count === true){
+            function userData(){
+                axios.post(url, User, Headers).then(response=>{
+                     if(response.data.message === "success"){
+                         setUserDetails(response.data.data)
+                     }
+                 }   )  
+                  axios.post(url2, User, Headers).then(response =>{
+                        if(response.data.message === "success"){
+                            const List = response.data.data
+                                setCardList(List)
+                        }
+                 })  
+                 
+             }
+             userData()
+                 setCount(false)
+        }
+    }else{
+        navigate("/signUp")
     }
-
-    if(count === true){
-        function userData(){
-            axios.post(url, User, Headers).then(response=>{
-                 if(response.data.message === "success"){
-                     setUserDetails(response.data.data)
-                 }
-             }   )  
-              axios.post(url2, User, Headers).then(response =>{
-                    if(response.data.message === "success"){
-                        const List = response.data.data
-                            setCardList(List)
-                    }
-             })  
-             
-         }
-         userData()
-             setCount(false)
-    }
+    
     
 
   

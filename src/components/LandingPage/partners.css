@@ -11,12 +11,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
 }
 .partners .partnerList .partnerImage{
     width: 200px;
     height: 200px;
-    margin-right: 100px;
+    /* margin-right: 100px; */
 }
 .partners .partnerList h3{
     color: #02083E;
@@ -29,14 +28,13 @@
     }
     .partners .partnerList{
         flex-direction: column-reverse;
-        padding-top: 100px;
+        padding-top: 60px;
         height: 400px;
         padding-bottom: 50px;
-        gap : 6em;
     }
     .partners .partnerList .partnerImage .image{
         object-fit: cover;
-        height: 200px;
+        height: 150px;
     }
     .partners .partnerList .partnerImage .image img{
         height: 100%;

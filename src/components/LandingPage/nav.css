@@ -8,11 +8,14 @@
     color : white;
     display : flex;
     justify-content : space-between;
+    background-color: #02083E;
 }
 .menuBtn{
     display: none;
 }
+
 .ourNav nav{
+    /* background-color: #02083E; */
     position: fixed;
     left: 100px;
     top: 30px;
@@ -28,6 +31,9 @@
 .homeNav ul li{
     list-style : none;
     margin-right : 100px;
+}
+.homeNav ul li svg{
+    margin-right: 10px;
 }
 .homeNav ul li a{
     color : white;
@@ -68,7 +74,7 @@
         background-color: #02083E;
     }
     .homeNav ul li {
-        font-size: 25px;
+        font-size: 15px;
         width: 150px;
         margin-top: 10px;
     }
@@ -78,6 +84,7 @@
         transform: scale(1.1);
         transition: .5s;
     }
+
     .menuBtn{
         position: fixed;
         top: 50px;
