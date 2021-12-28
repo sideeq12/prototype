@@ -3,6 +3,7 @@ import {Link } from "react-router-dom";
 import "./nav.css"
 import close  from "./whiteclose.svg"
 import menu from "./whitemenu.svg"
+import learner from "./learner.svg"
 
 
 const NavStyle = ()=>{
@@ -33,7 +34,7 @@ useEffect(()=>{
     return (
         <div className="nawao">
         <img src={myImage} alt="styling" className="menuBtn" onClick={changeIcon} />
-         <div className="ourNav"><nav>Leaner'sConnect </nav></div>
+         <div className="ourNav"><nav><img src={learner} /></nav></div>
        {((ToggleMenu || screenWidth>800) && ( <div className="homeNav">
        <ul>
        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-cursor-fill" viewBox="0 0 16 16">

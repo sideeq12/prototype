@@ -39,9 +39,17 @@
     color : white;
     text-decoration : none;
 }
+.nawao .ourNav nav img{
+    margin-top: -50px;
+    height: 150px;
+    /* border: 1px solid white; */
+}
 
 
 @media (max-width : 800px) {
+    .nawao .ourNav nav img{
+        height: 110px;
+    }
     .menuBtn{
         display: block;
     }
