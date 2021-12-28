@@ -38,6 +38,9 @@ const LoginDetails = ()=>{
                 .then((data)=>{
                     let message = data.data.message;
                     if(message === "correct"){
+                            // localStorage.setItem("userInfo", data.data.userData)
+                            console.log("the log is", data.data.userData)
+                            localStorage.setItem("userInfo", data.data.userData )
                             navigate("/dashboard")
                     }else if(message === "user_not_found"){
                             setErrorMessage("Email not found!")

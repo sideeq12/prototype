@@ -1,5 +1,4 @@
 import React from "react";
-import { Link, Routes, Route } from "react-router-dom";
 import NavLinks from "../NavLink/navLink";
 import "./support.css"
 import support from "./support.jpg"

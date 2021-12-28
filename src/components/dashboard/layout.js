@@ -23,7 +23,10 @@ const DashboardLayout = ()=>{
         tags : "",
     })
     if(localStorage.getItem("userInfo") !== null){
-        const email = JSON.parse(localStorage.getItem("userInfo")).email
+        const item =localStorage.getItem("userInfo")
+        console.log("the item is", item)
+        const email = JSON.parse(item).email
+        console.log("the email is here o", email)
         const User = {
             email : email
         }
