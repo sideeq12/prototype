@@ -72,7 +72,7 @@ const SignUp = ()=>{
         e.preventDefault();
         if(fullname === ""){
             setErrorMessage("Kindly input your full name")
-        }else if(email.includes("oauife.edu.ng")){
+        }else if(email.includes("student.oauife.edu.ng")){
             if(password !== "" && password.length > 8){
                if(image !== "empty"){
                 if(tags !== "empty"){
