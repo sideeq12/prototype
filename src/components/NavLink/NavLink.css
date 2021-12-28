@@ -4,20 +4,28 @@
     width: 25vw;
     height: 100vh;
     background-color: #02083E;
-    padding-top: 100px;
+    padding-top: 250px;
 }
-.myNav nav{
-    color: white;
-    font-size: 30px;
+.imagelogo1{
+    display: none;
+}
+.imagelogo img{
+    position: fixed;
+    z-index: 2;
+    height: 250px;
     margin-left: 30px;
 }
 .myNav ul{
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 .myNav ul li{
+    display: flex;
+    gap: 1em;
     margin-bottom: 20px;
     list-style: none;
 }
+
 .myNav ul li a{
     text-decoration: none;
     color: white;
@@ -35,6 +43,20 @@
         right: 50px;
         z-index: 2;
         display: block;
+    }
+    .imagelogo{
+        display: none;
+    }
+    .imagelogo1{
+        display: block;
+    }
+    .imagelogo1 img{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 120px;
+        z-index: 2;
+        /* margin-left: 30px; */
     }
     .myNav{
         position: fixed;

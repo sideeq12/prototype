@@ -55,7 +55,29 @@
     display: flex;
     flex-wrap: wrap;
 }
-
+.userDetails p.buttons{
+    display: flex;
+    gap: 1em;
+}
+.userDetails p.buttons button:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer;
+}
+.userDetails p.buttons .update{
+    background-color: #02083E;
+}
+.userDetails p.buttons .addcard{
+    background-color: green;
+}
+.userDetails p.buttons .logout{
+    background-color: rgb(189, 8, 8);
+}
+.userDetails p.buttons button{
+    color: white;
+    padding: 5px 15px;
+    border: none;
+}
 @media (max-width : 800px) {
     .layout{
         overflow-x: hidden;
@@ -64,8 +86,21 @@
         padding-left: 25px;
         padding-right: 25px;
     }
-    .userDetails{
-        height: 120px;
+    .userDetails{ 
+        /* background-color: green; */
+        width: 100vw;
+        height: fit-content;
+    flex-wrap: wrap;
+    }
+    .userDetails p.buttons{
+        flex-direction: row;
+    }
+    .userDetails p.buttons button{
+        padding: 5px 10px;
+    }
+   
+    .userDetails p em{
+        font-size: 12px;
     }
     .userDetails img{
         height:87px ;

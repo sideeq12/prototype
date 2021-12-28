@@ -43,6 +43,7 @@ const DashboardLayout = ()=>{
                   axios.post(url2, User, Headers).then(response =>{
                         if(response.data.message === "success"){
                             const List = response.data.data
+                            console.log(List)
                                 setCardList(List)
                         }
                  })  
@@ -67,7 +68,13 @@ const DashboardLayout = ()=>{
                 <p>
                     <b>{userDetails.full_name}</b>
                     <em>{userDetails.email}</em>
-                    <quote>{userDetails.faculty}</quote>
+                    <quote>{userDetails.Faculty}</quote>
+                </p>
+                <p className="buttons">
+                    <button className="update" onClick={()=>{navigate("/profileUpdate")}}>Update profile</button>
+                    <button className="addcard" onClick={()=>{navigate("/newskill")}}>Add new card</button>
+                    <button className="logout" onClick={()=>{localStorage.removeItem("userInfo")
+                navigate("/login")}}>Logout</button>
                 </p>
             </div>
             <div className="tagsection">
@@ -89,7 +96,8 @@ const DashboardLayout = ()=>{
                 </div>
             </div>
             <div className="skillList">
-                {cardList.map((data)=><Card image={data.image} key={data._id} text={data.description} price={data.price} link={data.social_link} />)}
+               {cardList.length > 0 &&  cardList.map((data)=><Card image={data.image} key={data._id} text={data.description} price={data.price} link={data.social_link} />)}
+                {cardList.length === 0 && <h4>You do not any active skill card (0/5 used) </h4>}
             </div>
         </div>
     )
