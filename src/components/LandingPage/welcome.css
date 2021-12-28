@@ -13,6 +13,19 @@
 .welcome .textSection, .welcome .imageSection{
     width : 45vw; 
 }
+.welcome .textSection {
+    animation: textsect;
+    animation-duration: 2s;
+}
+@keyframes textsect {
+    0%{
+        margin-left: -800px;
+    }
+    100%{
+margin-left: 0px;
+    }
+}
+
 
 .welcome .imageSection{
     display: flex;

@@ -16,8 +16,26 @@
 .secondLogin nav{
     color: white;
     font-size: 30px;
-    margin-top: 35px;
+    margin-top: 10px;
     margin-left: 40px;
+}
+.secondLogin nav img{
+    position: fixed;
+    top: 5px;
+    height: 150px;
+}
+.secondLogin img{
+    height: 80vh;
+    animation: imagel;
+    animation-duration: 2s;
+}
+@keyframes imagel {
+    0%{
+        margin-left: -100vw;
+    }
+    100%{
+        margin-left: 0vw;
+    }
 }
 .secondLogin p{
     color: white;
@@ -103,6 +121,9 @@ color: white;
 
 
 @media (max-width : 800px) {
+    .secondLogin nav img{
+        display: none;
+    }
     .mainLogin{
         display: flex;
         flex-direction: column;

@@ -37,6 +37,11 @@
     font-size: 20px;
     color: #02083E;
 }
+.headNav nav img{
+    height: 200px;
+    margin-left: -20px;
+    margin-top: -50px;
+}
 .imageSignUp{
     width: 50vw;
     height: 100vh;
@@ -47,12 +52,25 @@
     align-items: center;
     color: white;
 }
+.imageSignUp img{
+      animation: imagesect;
+    animation-duration: 3s;
+}
+@keyframes imagesect {
+    0%{
+        margin-right: -80vw;
+    }
+    100%{
+        margin-right: 0vw;
+    }
+}
 .imageSignUp p{
     width: 80%;
     text-align: center;
 }
 .mainSignup{
     width: 50vw;
+    padding-left: 50px;
 }
 .mainSignup .error{
     margin-left: 150px;
@@ -129,6 +147,11 @@
         width: 200px;
         height: 25px;
         margin-bottom: 10px;
+    }
+    .headNav nav img{
+        height: 100px;
+        margin-left: -20px;
+        margin-top: -50px;
     }
     .mainSignup .btn{
         width: 210px;
