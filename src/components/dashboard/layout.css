@@ -97,6 +97,7 @@
     }
     .userDetails p.buttons button{
         padding: 5px 10px;
+        margin-right: 10px;
     }
    
     .userDetails p em{
