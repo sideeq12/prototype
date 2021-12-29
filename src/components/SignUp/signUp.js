@@ -75,7 +75,7 @@ const SignUp = ()=>{
         }else if(email.includes("student.oauife.edu.ng")){
             if(password !== "" && password.length > 8){
                if(image !== "empty"){
-                if(tags !== "empty"){
+                if(tags !== "empty"){ 
                     if(password === Spassword){
                         setErrorMessage("")
                         User.password = password
