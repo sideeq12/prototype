@@ -1,0 +1,48 @@
+.dashboardWrap{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+.form{
+    width: 75vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+     align-items: center;
+}
+.form h2{
+    color: #02083E;
+}
+.err{
+    color: rgba(218, 9, 9, 0.753);
+}
+.form form textarea{
+    height: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    padding: 5px;
+    border-radius: 5px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+.form form button{
+    width: 310px;
+    height: 35px;
+    border: none;
+    color: white;
+    background-color: green;
+}
+.form form button:hover{
+    cursor: pointer;
+    background-color: #02083E;
+}
+
+@media (max-width : 800px) {
+    .dashboardWrap{
+        height: fit-content;
+    }
+    .form{
+        width: 100vw;
+    }
+}

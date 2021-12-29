@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import TemplateList from './components/templatelist/template';
 import NewSkill from './components/newskill/newskill';
 import Support from './components/support/support';
+import Update from './components/update/update';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
      <Route path="/templatelist" element={<TemplateList /> } />
      <Route path="/newskill" element={<NewSkill /> } />
      <Route path="/support" element={<Support />} />
+     <Route path="/profileUpdate" element={<Update />} />
  </Routes>
     </Router>
    
