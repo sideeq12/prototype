@@ -9,6 +9,8 @@ import TemplateList from './components/templatelist/template';
 import NewSkill from './components/newskill/newskill';
 import Support from './components/support/support';
 import Update from './components/update/update';
+import FAQ from './components/about/about';
+import About from './components/FAQ/faq';
 
 
 function App() {
@@ -24,6 +26,10 @@ function App() {
      <Route path="/newskill" element={<NewSkill /> } />
      <Route path="/support" element={<Support />} />
      <Route path="/profileUpdate" element={<Update />} />
+     <Route path="/FAQ" element={<FAQ />} />
+     <Route path="/about" element={<About />} />
+
+    
  </Routes>
     </Router>
    

@@ -17,7 +17,7 @@ const Headnav = ()=>{
             <nav><img src={imageLogo} /></nav>
             <ul>
             <li><Link to="/signUp">Enroll</Link></li>
-            <li><Link to="/support">FAQ</Link></li>
+            <li><Link to="/FAQ">FAQ</Link></li>
             <li><Link to="/support">Contact Us.</Link></li>
             </ul>
          </div>

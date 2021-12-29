@@ -18,6 +18,7 @@
 }
 
 .dashboardWrap .AboutWrapper p{
+    font-size: small;
     width: 60;
 }
 @media (max-width : 800px) {
@@ -34,6 +35,9 @@
         position: fixed;
         top : 9vh;
         font-size: 20px;
+    }
+    .dashboardWrap .AboutWrapper p{
+        font-size: 15px;
     }
 
 }
