@@ -38,9 +38,10 @@
     color: #02083E;
 }
 .headNav nav img{
-    height: 200px;
-    margin-left: -20px;
-    margin-top: -50px;
+    display: none;
+    height: 80px;
+    margin-left: -30px;
+    margin-top: -10px;
 }
 .imageSignUp{
     width: 50vw;
