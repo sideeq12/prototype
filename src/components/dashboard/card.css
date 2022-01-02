@@ -13,6 +13,14 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+.card .deleteIcon{
+    color: white;
+    z-index: 1;
+    top: 10px;
+    text-align: center;
+    margin-bottom: -10px;
+    z-index: 2;
+}
 .card .cardDescription{
     padding:0px 10px;
     text-align: left;

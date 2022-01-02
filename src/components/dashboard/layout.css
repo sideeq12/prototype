@@ -4,6 +4,7 @@
     padding-left: 50px;
     height: 100vh;
     overflow-y: scroll;
+    padding-bottom: 50px;
 }
 .userDetails{
     display: flex;
@@ -54,6 +55,7 @@
     width: 65vw;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 .userDetails p.buttons{
     display: flex;
@@ -129,6 +131,7 @@
     }
     .skillList{
         width: 100vw;
+        margin-bottom: 10px;
     }
     /* .skillList{
         background-color: green;
