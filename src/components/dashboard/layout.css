@@ -92,6 +92,8 @@
       padding-left: 15px;
         width: 100vw;
         height: fit-content;
+        padding-bottom: 20px;
+        padding-top: 20px;
     flex-wrap: wrap;
     }
     .userDetails p.buttons{
@@ -138,12 +140,14 @@
     }
     .tagsection .aboutTag p{
         color: rgba(255, 255, 255, 0.774);
+        padding-left: 10px;
     }
     .skillList{
         width: 100vw;
         color : white;
         width: 100vw;
         background-color: #02083E;
+        padding-left: 20px;
     }
     /* .skillList{
         background-color: green;
