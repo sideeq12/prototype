@@ -69,4 +69,9 @@
         justify-content: center;
         align-items: center;
     }
+    .myNav ul{
+        margin-top: -20%;
+        margin-left: -10%;
+    }
+
 }

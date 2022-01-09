@@ -12,6 +12,7 @@
     height: 200px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    background-repeat: no-repeat;
 }
 .card .deleteIcon{
     color: white;
@@ -47,6 +48,7 @@
         width: 150px;
         color: black;
         background-color: white;
+        padding-bottom: 5px;
     }
     .card img{
         height: 100px;

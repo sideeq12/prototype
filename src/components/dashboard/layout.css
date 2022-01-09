@@ -87,6 +87,7 @@
         width: 100vw;
         padding-left: 0px;
         padding-right: 0px;
+        padding-bottom: 0px;
     }
     .userDetails{ 
       padding-left: 15px;
@@ -148,8 +149,7 @@
         width: 100vw;
         background-color: #02083E;
         padding-left: 20px;
+        margin-bottom: 0px;
+        padding-bottom: 10px;
     }
-    /* .skillList{
-        background-color: green;
-    } */
 }
