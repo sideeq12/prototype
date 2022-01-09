@@ -85,11 +85,11 @@
         overflow-x: hidden;
         padding-top: 100px;
         width: 100vw;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .userDetails{ 
-        /* background-color: green; */
+      padding-left: 15px;
         width: 100vw;
         height: fit-content;
     flex-wrap: wrap;
@@ -119,19 +119,31 @@
     }
     
     .tagsection{
+        padding-left: 25px;
+        width: 100vw;
         flex-direction: column;
+        color : white;
+        background-color: #02083E;
     }
     .tagsection .tagList p{
         width: 90vw;
         text-align: left;
         font-size: 12px;
     }
+    .tagsection .tagList p em{
+        color: rgba(255, 255, 255, 0.781);
+    }
     .tagsection .aboutTag{
         width: 80vw;
     }
+    .tagsection .aboutTag p{
+        color: rgba(255, 255, 255, 0.774);
+    }
     .skillList{
         width: 100vw;
-        margin-bottom: 10px;
+        color : white;
+        width: 100vw;
+        background-color: #02083E;
     }
     /* .skillList{
         background-color: green;

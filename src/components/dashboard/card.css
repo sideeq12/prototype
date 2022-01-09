@@ -45,6 +45,8 @@
     .card{
         height: 200px;
         width: 150px;
+        color: black;
+        background-color: white;
     }
     .card img{
         height: 100px;
