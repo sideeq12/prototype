@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./card.css"
 
-const url = "http://localhost:8080/api/cards/delete"
+const url = "https://learnersconnect.herokuapp.com/api/cards/delete"
 
 const Card = ({image, price, text, link, id, showed}) =>{
 
