@@ -8,9 +8,6 @@
     width: 75vw;
     height: 100vh;
     overflow-y: scroll;
-    display: flex;
-    justify-content: center; 
-     align-items: center;
 }
 .dashboardWrap .skillWrap .skill{
     width: 72vw;
@@ -35,8 +32,12 @@
     text-align: center;
     height: 30px;
     color: rgba(0, 0, 0, 0.548);
-    width: 60%;
+    width: 50%;
     border: 1px solid rgba(0, 0, 0, 0.247);
+}
+.dashboardWrap .skillWrap .skill .searchSection select{
+    height: 35px;
+    margin-left: 10px;
 }
 .dashboardWrap .skillWrap .skill .searchSection button{
     width: 100px;
@@ -76,10 +77,15 @@
         width: 90%;
     }
     .dashboardWrap .skillWrap .skill .searchSection{
-        width: 90%;
+        width: 100%;
     }
     .dashboardWrap .skillWrap .skill .searchSection input{
         height: 25px;
+        width: 40%;
+        margin-left: 20px;
+    }
+    .dashboardWrap .skillWrap .skill .searchSection select{
+        height: 30px;
     }
     .dashboardWrap .skillWrap .skill .searchSection button{
         height: 30px;
